@@ -11,16 +11,16 @@ connection after setting up your python environment.
 
 Set up with your favorite python virtual environment, for example:
 
-    virtualenv -v -p /usr/bin/python3.6 venv
+    virtualenv -p /usr/bin/python3.6 venv
     source venv/bin/activate
     pip install -r requirements.txt
     juypter notebook
     
 Running docker:
 
-    # Docker the container
+    # Build the image
     cd owlsim-docker
-    docker build ./ -t owlsim-slim
+    docker build -t owlsim-slim .
 
     # Run and wait 90 seconds for the server to start up
     docker run -d -p 9031:9031 --name owlsim owlsim-slim

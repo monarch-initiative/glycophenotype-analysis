@@ -13,7 +13,7 @@ wget http://build.berkeleybop.org/userContent/owltools/owltools
 
 # To run owlsim with docker
 # Docker build
-docker build ./ -t owlsim-slim
+docker build -t owlsim-slim .
 
 # Run and wait 90 seconds for the server to start up
 docker run -d -p 9031:9031 --name owlsim owlsim-slim
