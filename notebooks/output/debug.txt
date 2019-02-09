@@ -1,0 +1,59 @@
+# Why are results different between Monarch and the latest hp and mondo releases?
+
+# Collect diseases that show up from Monarch and not in the dockerized OwlSim,
+# Sort by occurrence
+
+     56 MONDO:0009914
+     53 MONDO:0010073
+     25 MONDO:0019306
+     24 MONDO:0007239
+     13 MONDO:0018781
+     11 MONDO:0009737
+     10 MONDO:0017851
+      9 MONDO:0019554
+      9 MONDO:0018853
+      8 MONDO:0009658
+      6 MONDO:0010028
+      6 MONDO:0009662
+      6 MONDO:0008830
+      5 MONDO:0009655
+      4 MONDO:0011759
+      4 MONDO:0009657
+      3 MONDO:0019556
+      3 MONDO:0009262
+      3 MONDO:0007554
+      3 MONDO:0007511
+      2 MONDO:0019555
+      2 MONDO:0019553
+      2 MONDO:0018490
+      2 MONDO:0009656
+      1 MONDO:0008410
+      1 MONDO:0008291
+
+Pseudodiastrophic dysplasia (MONDO:0009914)
+Profiles same on both servers:
+https://monarchinitiative.org/owlsim/getAttributeInformationProfile?a=HP:0000248&a=HP:0000272&a=HP:0000319&a=HP:0000347&a=HP:0000463&a=HP:0000465&a=HP:0000470&a=HP:0000592&a=HP:0000926&a=HP:0001508&a=HP:0001762&a=HP:0001945&a=HP:0002007&a=HP:0002650&a=HP:0002719&a=HP:0002938&a=HP:0003042&a=HP:0003311&a=HP:0003510&a=HP:0005680&a=HP:0006243&a=HP:0008905&a=HP:0011800&a=HP:0012385&a=HP:0001539&a=HP:0030680
+http://localhost:9031/getAttributeInformationProfile?a=HP:0000248&a=HP:0000272&a=HP:0000319&a=HP:0000347&a=HP:0000463&a=HP:0000465&a=HP:0000470&a=HP:0000592&a=HP:0000926&a=HP:0001508&a=HP:0001762&a=HP:0001945&a=HP:0002007&a=HP:0002650&a=HP:0002719&a=HP:0002938&a=HP:0003042&a=HP:0003311&a=HP:0003510&a=HP:0005680&a=HP:0006243&a=HP:0008905&a=HP:0011800&a=HP:0012385&a=HP:0001539&a=HP:0030680
+
+IC lower on docker owlsim,
+Platyspondyly, Malar flattening, disproportionately lower on docker
+
+####################################################################
+
+spondyloepiphyseal dysplasia tarda, Kohn type (MONDO:0010073)
+
+https://monarchinitiative.org/owlsim/getAttributeInformationProfile?a=HP:0000926&a=HP:0001249&a=HP:0002655&a=HP:0002673&a=HP:0003185&a=HP:0008430
+http://localhost:9031/getAttributeInformationProfile?a=HP:0000926&a=HP:0001249&a=HP:0002655&a=HP:0002673&a=HP:0003185&a=HP:0008430
+
+Platyspondyly may be culprit,
+
+Possible that platyspondyly is annotated more frequently in disease to phenotype than model genotype - phenotype
+According to monarch:
+128 diseases, 3 mouse genes, 3 mouse genotypes
+
+# Disease groups in monarch owlsim but filtered out of dockerized owlsim
+MONDO:0018781	KID syndrome
+MONDO:0017851	erythrokeratodermia variabilis
+MONDO:0019306	congenital non-bullous ichthyosiform erythroderma
+MONDO:0016584	mandibuloacral dysplasia
+MONDO:0005827	lipoatrophic diabetes
