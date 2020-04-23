@@ -1,5 +1,5 @@
 # The files in this directory were generated via:
-wget http://build.berkeleybop.org/userContent/owltools/owltools
+wget http://current.geneontology.org/bin/owltools
 
 ./owltools http://purl.obolibrary.org/obo/hp/releases/2018-12-21/hp.owl --merge-imports-closure --load-instances ../data/owlsim-data/d2p.tsv --load-labels ../data/owlsim-data/mondo_labels.tsv --merge-support-ontologies --remove-axioms -t ObjectPropertyDomain --remove-axioms -t ObjectPropertyRange --remove-axioms -t DisjointClasses -o all.owl
 
